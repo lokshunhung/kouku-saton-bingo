@@ -331,6 +331,7 @@ function App() {
     )
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const BingoTableView = useMemo(BingoTable, [bingo, round, isInanna, stillListening, preferSkull])
 
   const handleInanna = (e) => {
@@ -471,6 +472,7 @@ function App() {
         language: 'ko'
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [listening])
 
   return (
